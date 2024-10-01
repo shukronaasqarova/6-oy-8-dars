@@ -48,7 +48,7 @@ export default function Home() {
                 <button type="submit" className="bg-gray-700 text-white py-3 rounded-md hover:bg-gray-600 transition-all duration-200 w-full">Add Product</button>
             </form>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+            <div className="flex flex-col items-center min-h-screen bg-gray-50 p-6">
                 {products.map((product) => (
                     <div key={product.id} className="border border-gray-300 p-4 rounded-md bg-white shadow-md">
                         <h3 className="text-lg font-semibold">{product.name}</h3>
